@@ -11,8 +11,6 @@ import subprocess
 nlp = spacy.load("fr_core_news_sm")
 import fr_core_news_sm
 nlp = fr_core_news_sm.load()
-# la limite est de 1000000 de mots, pas suffisant
-#nlp.max_length = 5000000
 
 # on récupère les fréquences de chaque lemme nominal
 def frequences_lemmes_nom(document: str) -> Dict[str, int]:
