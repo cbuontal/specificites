@@ -37,6 +37,3 @@ for (lemme, specificite) in sorted(spec_focus.items(), key=lambda paire: paire[1
 print("Plus spécifiques :")
 for (lemme, specificite) in sorted(spec_focus.items(), key=lambda paire: paire[1], reverse=True)[:10]:
   print(f"{lemme}\t{specificite}")
-
-#spec = specif(1, 10, 100, 1000)
-#print(f"Score de spécificité : {spec}")
